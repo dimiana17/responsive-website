@@ -588,3 +588,65 @@ header.sticky{
     border-radius: 40px;
     cursor: pointer;
 }
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.footer-box h6{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.footer-box h6 span{
+    font-weight: 700;
+    font-family: var(--font-family2);
+}
+.footer-box p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--other-color);
+    line-height: 30px;
+    margin-bottom: 30px;
+
+}
+
+.social-icons i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 18px;
+    color: var(--main-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all .6s ease;
+}
+.social-icons i:hover{
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+.footer-box h3{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.footer-box a{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--other-color);
+    margin-bottom: 1.1rem;
+    transition: all .6s ease; 
+}
+.footer-box a:hover{
+    color: var(--main-color);
+    transform: translateY(-4px);
+}
